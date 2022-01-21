@@ -1,0 +1,32 @@
+.rounded-20 {
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+}
+
+.drop-shadow {
+    -fx-effect: dropshadow(three-pass-box, rgba(12, 12, 12, 0.48), 20, 0, 0, 0);
+}
+
+.list-view .list-cell,
+.list-view .list-cell:filled,
+.list-view .list-cell:selected,
+.list-view .list-cell:focused,
+.list-view .list-cell:hover {
+    -fx-padding: 12 0 12 0;
+    -fx-background-color: transparent;
+    -fx-effect: null;
+}
+
+.list-view .scroll-bar:vertical {
+    -fx-scale-x: 0;
+}
+
+.list-view .scroll-bar:horizontal {
+    -fx-scale-x: 0;
+}
+
+.cell {
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-background-color: #3e4b4b;
+}

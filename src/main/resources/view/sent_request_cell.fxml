@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="390.0" styleClass="cell" stylesheets="@../style/general_style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetwork.controller.SentRequestController">
+   <children>
+       <JFXButton layoutX="21.0" layoutY="26.0" prefHeight="80.0" prefWidth="80.0" styleClass="solid-light-green-rounded" stylesheets="@../style/button_style.css" AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="26.0">
+           <graphic>
+               <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                   <image>
+                       <Image url="@../images/discord.png" />
+                   </image>
+               </ImageView>
+           </graphic>
+       </JFXButton>
+      <Label fx:id="nameText" layoutX="99.0" layoutY="14.0" text="User name" textFill="#cccccc" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="24.0">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="cancelButton" onAction="#onCancelButtonClick" layoutX="135.0" layoutY="66.0" prefHeight="40.0" style="-fx-font-size: 18;" styleClass="register-button" stylesheets="@../style/button_style.css" text="Cancel request" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="125.0" AnchorPane.topAnchor="66.0" />
+      </children>
+</AnchorPane>

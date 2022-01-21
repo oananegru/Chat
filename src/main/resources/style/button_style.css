@@ -1,0 +1,84 @@
+.register-button {
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-padding: 10px 20px 10px 20px;
+    -fx-background-color: #171b1b;
+    -fx-text-fill: #ccc;
+    -fx-pref-width: USE_PREF_SIZE;
+}
+
+.register-button:hover {
+    -fx-background-color: #ccc;
+    -fx-text-fill: #333;
+}
+
+.solid-round-button {
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-background-color: #17c28f;
+    -fx-text-fill: #fff;
+    -fx-font-size: 22px;
+}
+
+.solid-round-button:hover {
+    -fx-background-color: #17c7ee;
+}
+
+.nav-bar-button  {
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-text-fill: #fff;
+}
+
+.nav-bar-button-selected {
+    -fx-background-color: #3ffdc3;
+}
+
+.solid-light-green-rounded {
+    -fx-background-radius: 100px;
+    -fx-border-radius: 100px;
+    -fx-background-color: #b9f3e1;
+    -fx-text-fill: #171b1b;
+    -fx-font-size: 22px;
+}
+
+.solid-green-rounded {
+    -fx-background-radius: 100px;
+    -fx-border-radius: 100px;
+    -fx-background-color: #17c28f;
+    -fx-text-fill: #fff;
+    -fx-font-size: 22px;
+}
+
+.solid-red-round-button {
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-background-color: #f63d1c;
+    -fx-text-fill: #fff;
+    -fx-font-size: 22px;
+}
+
+.solid-red-round-button:hover {
+    -fx-background-color: #770f28;
+}
+
+.rounded {
+    -fx-border-radius: 100px;
+    -fx-background-radius: 100px;
+    -fx-padding: 12px 22px 12px 22px;
+    -fx-text-fill: #ccc;
+    -fx-pref-width: USE_PREF_SIZE;
+}
+
+.rounded:hover {
+    -fx-background-color: #ccc;
+    -fx-text-fill: #333;
+}
+
+.grey {
+    -fx-background-color: #273131;
+}
+
+.dark {
+    -fx-background-color: #171b1b;
+}

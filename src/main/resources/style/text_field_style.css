@@ -1,0 +1,8 @@
+.auth-text-field {
+    -fx-background-color: #494f4f;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-text-fill: #ccc;
+    -fx-font-size: 22px;
+    -fx-padding: 10px 30px 10px 30px;
+}

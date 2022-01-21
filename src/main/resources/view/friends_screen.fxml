@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="container" prefHeight="754.0" prefWidth="1038.0" style="-fx-background-color: #273131;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetwork.controller.FriendsController">
+   <children>
+      <AnchorPane layoutY="67.0" prefHeight="200.0" prefWidth="450.0" style="-fx-background-color: #323f3f;" stylesheets="@../style/button_style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="41.0" layoutY="35.0" text="Friend Requests" textFill="#cccccc" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="24.0">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="receivedRequestsButton" onAction="#onReceivedRequestsButtonClick" layoutX="24.0" layoutY="76.0" minWidth="104.0" text="Received" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="70.0">
+               <styleClass>
+                  <String fx:value="rounded" />
+                  <String fx:value="grey" />
+                  <String fx:value="dark" />
+               </styleClass></JFXButton>
+            <JFXButton fx:id="sentRequestsButton" onAction="#onSentRequestsButtonClick" layoutX="142.0" layoutY="70.0" minWidth="104.0" text="Sent" AnchorPane.leftAnchor="142.0" AnchorPane.topAnchor="70.0">
+               <styleClass>
+                  <String fx:value="rounded" />
+                  <String fx:value="grey" />
+               </styleClass>
+            </JFXButton>
+            <ListView fx:id="requestsListView" layoutX="28.0" layoutY="130.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #323f3f;" stylesheets="@../style/general_style.css" styleClass="list-view" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="130.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="483.0" layoutY="35.0" text="Your Friends" textFill="#cccccc" AnchorPane.leftAnchor="483.0" AnchorPane.topAnchor="24.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <ListView fx:id="friendsListView" layoutX="483.0" layoutY="72.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #273131;" stylesheets="@../style/general_style.css" styleClass="list-view" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="483.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="70.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minWidth="-Infinity" style="-fx-background-color: #171b1b;" stylesheets="@../style/general_style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetwork.controller.ProgressDialogController">
+    <children>
+        <Label fx:id="messageLabel" layoutX="81.0" layoutY="24.0" text="Loading..." textFill="#cccccc" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="24.0">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="22.0">
+         <image>
+            <Image url="@../images/loading.png" />
+         </image>
+      </ImageView>
+    </children>
+    <styleClass>
+        <String fx:value="rounded-20" />
+        <String fx:value="drop-shadow" />
+    </styleClass>
+    <cursor>
+        <Cursor fx:constant="DEFAULT" />
+    </cursor>
+    <effect>
+        <Blend />
+    </effect>
+
+</AnchorPane>

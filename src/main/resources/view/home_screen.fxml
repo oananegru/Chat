@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="754.0" prefWidth="1173.0" style="-fx-background-color: #273131;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetwork.controller.HomeController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="120.0" style="-fx-background-color: #17c28f;" stylesheets="@../style/button_style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="89.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <JFXButton fx:id="navbarItem1" onAction="#navbarItem1Click" prefHeight="70.0" prefWidth="70.0">
+                     <VBox.margin>
+                        <Insets left="16.0" right="16.0" top="24.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="nav-bar-button" />
+                        <String fx:value="nav-bar-button-selected" />
+                     </styleClass>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/chat.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="navbarItem2" onAction="#navbarItem2Click" prefHeight="70.0" prefWidth="70.0" styleClass="nav-bar-button">
+                     <VBox.margin>
+                        <Insets left="16.0" right="16.0" top="16.0" />
+                     </VBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/community.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="navbarItem3" onAction="#navbarItem3Click" prefHeight="70.0" prefWidth="70.0" styleClass="nav-bar-button">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/community.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="16.0" right="16.0" top="16.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children></VBox>
+            <JFXButton fx:id="profileButton" layoutX="25.0" layoutY="652.0" prefHeight="70.0" prefWidth="70.0" styleClass="solid-light-green-rounded" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/discord.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label fx:id="nameText" alignment="CENTER" layoutX="42.0" layoutY="711.0" text="Name" textFill="WHITE" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="container" layoutX="487.0" layoutY="193.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

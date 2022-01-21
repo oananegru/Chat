@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefWidth="580.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetwork.controller.SentMessageController">
+   <children>
+      <Label fx:id="messageText" layoutX="407.0" layoutY="223.0" maxWidth="450.0" style="-fx-background-color: #6189a9;" styleClass="message-item" stylesheets="@../style/message.css" text="Message test" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

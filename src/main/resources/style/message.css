@@ -1,0 +1,7 @@
+.message-item {
+    -fx-padding: 16px;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+}

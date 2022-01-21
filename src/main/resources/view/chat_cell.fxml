@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="itemView" onMouseClicked="#onItemClick" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="320.0" style="-fx-background-color: #3c5485;" styleClass="rounded-20" stylesheets="@../style/general_style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetwork.controller.ChatCellController">
+   <children>
+       <JFXButton layoutX="26.0" layoutY="37.0" prefHeight="60.0" prefWidth="60.0" styleClass="solid-light-green-rounded" stylesheets="@../style/button_style.css" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="16.0">
+           <graphic>
+               <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                   <image>
+                       <Image url="@../images/discord.png" />
+                   </image>
+               </ImageView>
+           </graphic>
+       </JFXButton>
+      <Label fx:id="nameText" layoutX="125.0" layoutY="20.0" text="User name" textFill="#cccccc" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="messageText" layoutX="125.0" layoutY="46.0" text="Label" style="-fx-text-fill: #7cded6;" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="46.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      </children>
+</AnchorPane>

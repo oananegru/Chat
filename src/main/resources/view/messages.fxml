@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="754.0" prefWidth="1038.0" style="-fx-background-color: #273130;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetwork.controller.MessageController">
+   <children>
+      <AnchorPane layoutX="182.0" prefHeight="700.0" prefWidth="400.0" style="-fx-background-color: #6189a9;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="26.0" layoutY="24.0" prefHeight="40.0" prefWidth="73.0" text="Chat" textFill="#403939" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="24.0">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <ListView fx:id="chatListView" layoutX="24.0" layoutY="72.0" prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #6189a9;" styleClass="list-view" stylesheets="@../style/general_style.css" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="72.0" />
+         </children>
+      </AnchorPane>
+      <VBox layoutX="425.0" layoutY="35.0" AnchorPane.leftAnchor="425.0" AnchorPane.topAnchor="16.0">
+         <children>
+            <Label prefHeight="40.0" prefWidth="274.0" text="Messages" textFill="#426dc9">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label prefHeight="18.0" prefWidth="274.0" text="From:  John                                               " textFill="#839099" underline="true">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <TextField fx:id="messageTextField" layoutX="425.0" layoutY="680.0" minHeight="60.0" promptText="Type message..." styleClass="auth-text-field" stylesheets="@../style/text_field_style.css" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="425.0" AnchorPane.rightAnchor="24.0" />
+      <JFXButton fx:id="sendButton" onAction="#onSendButtonClick" layoutX="919.0" layoutY="673.0" minHeight="50.0" prefWidth="50.0" styleClass="rounded" stylesheets="@../style/button_style.css" AnchorPane.bottomAnchor="27.0" AnchorPane.rightAnchor="24.0">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/send.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <ListView fx:id="conversationListView" layoutX="425.0" layoutY="92.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #273131;" styleClass="list-view" stylesheets="@../style/general_style.css" AnchorPane.bottomAnchor="110.0" AnchorPane.leftAnchor="425.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="92.0" />
+   </children>
+</AnchorPane>

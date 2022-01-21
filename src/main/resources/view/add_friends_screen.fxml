@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="754.0" prefWidth="1038.0" style="-fx-background-color: #273131;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetwork.controller.AddFriendsController">
+   <children>
+      <ListView fx:id="usersListView" layoutX="249.0" layoutY="177.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #273131;" styleClass="list-view" stylesheets="@../style/general_style.css" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="32.0" />
+   </children>
+</AnchorPane>

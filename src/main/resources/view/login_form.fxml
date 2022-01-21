@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="535.0" maxWidth="500.0" minWidth="494.0" prefHeight="420.0" prefWidth="494.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.socialnetwork.controller.LoginController">
+    <stylesheets>
+        <URL value="@../style/text_field_style.css" />
+        <URL value="@../style/button_style.css" />
+    </stylesheets>
+    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="148.0" layoutY="22.0" minHeight="60.0" minWidth="200.0" text="Login" textFill="#cccccc" AnchorPane.leftAnchor="48.0" AnchorPane.rightAnchor="48.0" AnchorPane.topAnchor="22.0">
+        <font>
+            <Font size="46.0" />
+        </font>
+    </Label>
+    <TextField fx:id="emailTextField" layoutX="48.0" layoutY="115.0" maxHeight="60.0" minHeight="-Infinity" minWidth="400.0" prefHeight="60.0" prefWidth="400.0" promptText="email" styleClass="auth-text-field" AnchorPane.leftAnchor="48.0" AnchorPane.rightAnchor="47.0" AnchorPane.topAnchor="120.0">
+        <font>
+            <Font size="22.0" />
+        </font>
+    </TextField>
+    <PasswordField fx:id="passwordField" layoutX="48.0" layoutY="217.0" maxHeight="60.0" minWidth="400.0" prefHeight="60.0" prefWidth="400.0" promptText="password" styleClass="auth-text-field" AnchorPane.leftAnchor="48.0" AnchorPane.rightAnchor="47.0" AnchorPane.topAnchor="217.0">
+        <font>
+            <Font size="22.0" />
+        </font>
+    </PasswordField>
+    <Button fx:id="loginButton" layoutX="48.0" layoutY="311.0" maxHeight="60.0" minWidth="400.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="400.0" onAction="#onLoginButtonClick" styleClass="solid-round-button" text="Login" AnchorPane.leftAnchor="48.0" AnchorPane.rightAnchor="47.0" AnchorPane.topAnchor="311.0" />
+</AnchorPane>
